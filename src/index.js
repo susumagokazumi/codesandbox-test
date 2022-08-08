@@ -163,5 +163,16 @@ const nameArr = ["田中", "山田", "後藤"];
 
 //nameArr.map((name) => console.log(name));
 
-const numArr = [1, 2, 3, 4, 5];
-const newNumArr = numArr.filter();
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "後藤") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
